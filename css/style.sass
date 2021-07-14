@@ -1,0 +1,19 @@
+@mixin font($font_name, $file_name, $weight, $style) 
+
+	@font-face 
+		font-family: $font_name
+		font-display: swap
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2")
+		font-weight: #{$weight}
+		font-style: #{$style}
+body
+  position: relative
+  height: 100vh
+  background: url('../img/bg.jpg') no-repeat top
+  background-size: cover
+  margin: 0px 0px 0px 0px
+  overflow: hidden
+
+@import "ibg.sass"
+@import "fonts.sass"
+@import "header.sass"

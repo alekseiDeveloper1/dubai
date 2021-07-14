@@ -1,0 +1,275 @@
+body {
+  position: relative;
+  height: 100vh;
+  background: url("../img/bg.jpg") no-repeat top;
+  background-size: cover;
+  margin: 0px 0px 0px 0px;
+  overflow: hidden;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0px auto 40px 7%;
+  width: 70%;
+  padding: 50px 0px 0px 0px;
+}
+
+.header-logo__img {
+  width: 175px;
+}
+
+.header-login__link {
+  text-decoration: none;
+}
+
+.header-login__link:hover {
+  text-decoration: underline;
+}
+
+.header-login__link span {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+
+.header-login__img {
+  margin: 0px 10px 0px 0px;
+  width: 20px;
+}
+
+.main {
+  margin: 0px auto 10px 7%;
+  width: 70%;
+}
+
+.main-title {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 2.5vw;
+  color: #000000;
+  margin: 0px 0px 20px 0px;
+}
+
+.main-body {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 1.5vw;
+  color: #000000;
+  margin: 0px 0px 20px 0px;
+}
+
+.main-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-btn__wonan {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0px 74px 0px 0px;
+  padding: 20px 100px;
+  background: #000;
+}
+
+.main-btn__wonan:hover {
+  background: #2c2c2c;
+}
+
+.main-btn__man {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 20px 100px;
+  background: #000;
+}
+
+.main-btn__man:hover {
+  background: #2c2c2c;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-body {
+  padding: 50px 100px;
+  background: #fff;
+  text-align: center;
+  margin: auto;
+  margin-top: 15%;
+  width: 430px;
+  height: 100px;
+}
+
+.overlay-body__title {
+  display: inline-block;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 28px;
+  color: #000000;
+  margin: 0px 0px 40px 0px;
+}
+
+.overlay-btn__en {
+  padding: 15px 40px;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 24px;
+  color: #000000;
+  border: 1px solid #000000;
+  margin: 0px 50px 0px 0px;
+  text-decoration: none;
+}
+
+.overlay-btn__rus {
+  padding: 15px 40px;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 24px;
+  color: #000000;
+  border: 1px solid #000000;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .main-title {
+    font-size: 4vh;
+  }
+
+  .main-body {
+    font-size: 2.5vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .overlay-body {
+    width: 340px;
+    height: 230px;
+    padding: 25px 50px;
+  }
+
+  .overlay-body__title {
+    font-size: 22px;
+  }
+
+  .overlay-btn__en {
+    display: inline-block;
+    margin: 0px 5px 40px 5px;
+  }
+
+  .overlay-btn__rus {
+    margin: 0px 5px 0px 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-title {
+    font-size: 3vh;
+  }
+
+  .main-body {
+    font-size: 2vh;
+  }
+
+  .main-btn {
+    display: block;
+    text-align: center;
+  }
+
+  .main-btn__wonan {
+    display: inline-block;
+    margin: 20px 5px 0px 0px;
+    font-size: 14px;
+  }
+
+  .main-btn__man {
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 5px 0px 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    padding: 25px 0px 0px 0px;
+    margin: 0px auto 20px 7%;
+  }
+
+  .header-logo__img {
+    width: 100px;
+  }
+
+  .header-login__img {
+    width: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .overlay-body {
+    width: 250px;
+    height: 240px;
+    padding: 10px 20px;
+    margin-top: 20%;
+  }
+
+  .overlay-body__title {
+    font-size: 18px;
+  }
+
+  .overlay-btn__en {
+    font-size: 16px;
+    margin: 0px 10px 40px 10px;
+  }
+
+  .overlay-btn__rus {
+    font-size: 16px;
+    margin: 0px 10px 0px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    width: 90%;
+  }
+
+  .main {
+    width: 90%;
+  }
+}
